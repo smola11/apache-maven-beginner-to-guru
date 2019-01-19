@@ -1,10 +1,12 @@
+import org.junit.Test;
 
+import static org.junit.Assert.*;
 
 public class JavaHelloWorldTest {
 
-    // POJO test
-    public void testGetHello() {
+    @Test
+    public void getHello() {
         JavaHelloWorld javaHelloWorld = new JavaHelloWorld();
-        assert ("Hello World".equals(javaHelloWorld.getHello()));
+        assertEquals("Hello World", javaHelloWorld.getHello());
     }
 }
