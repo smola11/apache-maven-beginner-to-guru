@@ -1,7 +1,6 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import static org.junit.Assert.assertEquals;
 
 public class JavaHelloWorldTest {
 
@@ -10,4 +9,5 @@ public class JavaHelloWorldTest {
         JavaHelloWorld javaHelloWorld = new JavaHelloWorld();
         assertEquals("Hello World", javaHelloWorld.getHello());
     }
+
 }
