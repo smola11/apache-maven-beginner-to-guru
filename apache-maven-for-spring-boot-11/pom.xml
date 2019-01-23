@@ -51,6 +51,18 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<executions>
+                    <execution>
+                        <id>build-info-goal</id>
+                        <!-- By default during compile-resources phase -->
+                        <goals>
+                            <goal>build-info</goal>
+                        </goals>
+                        <configuration>
+                            <additionalProperties>
+                                <java.version>${java.version}</java.version>
+                            </additionalProperties>
+                        </configuration>
+                    </execution>
 					<execution>
 						<id>pre-it</id>
 						<goals>
