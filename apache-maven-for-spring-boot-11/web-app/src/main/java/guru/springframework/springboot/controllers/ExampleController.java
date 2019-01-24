@@ -1,5 +1,6 @@
 package guru.springframework.springboot.controllers;
 
+import guru.springframework.json.model.ShippingAddress;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,6 +20,12 @@ public class ExampleController {
         returnval.put("hello", "world");
 
         return returnval;
+    }
+
+    @RequestMapping("/shipAddress")
+    public ShippingAddress getShippingAddress() {
+
+        return new ShippingAddress();
     }
 
 }

@@ -16,12 +16,16 @@
 
 	<groupId>guru.springframework</groupId>
 	<artifactId>mb2g-spring-boot</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${revision}</version>
+
 	<name>mb2g-spring-boot</name>
 	<description>Example Project fpr Spring Boot</description>
 
 	<properties>
-		<java.version>11</java.version>
+        <revision>0.0.1-SNAPSHOT</revision>
+        <java.version>11</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
 
     <build>
